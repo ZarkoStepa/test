@@ -3,21 +3,120 @@
 <head>
 <link href="main.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8"/>
-<title>My responsive site</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<title>My responsive site </title>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
 <body>
     <header>
-        <nav>
-            <ol>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>More</li>
-                <li>Cotact me</li>
-            </ol> 
-        </nav> 
-    <header>
-<div class="darken">
-    <p>Beautiful image with dark overlay</p>
-</div>
+	<div class="nav">        
+			<ul>				
+				<li><a href="#about_me">About me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#darken">Work</a></li>
+				<li><a href="#contact">Cotact me</a></li>
+			</ul>        
+		</div>
+    </header>
+		<div id="about_me" class="intro" rel="internal">
+				<h2>Hi, I'm Zarko ..</h2>
+				<p>a web developer </p>
+		</div>
+		<div class="work" id="projects" rel="internal">
+				<h2 class="work-header">These are some of my projects..</h2>
+					
+					<a href="bootstrap_page.html" target="_blank" class="project project-tile">
+					<img class="project-pic" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/kitchen.jpg" alt="project">
+					<div class="project-title">Responsive Page</div>
+					</a>									
+					<a href="galery.html" class="project project-tile">
+					<img class="project-pic" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/woodwork.jpg" alt="project">
+					<div class="project-title">Tribute Page</div>
+					</a>					
+					<a href="calculator.html" target="_blank" class="project project-tile">
+					<img class="project-pic" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/gifts.jpg" alt="project">
+					<div class="project-title">Calculator Page</div>
+					</a>
+					<a href="calculator2.html" target="_blank" class="project project-tile">
+					<img class="project-pic" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/antique.jpg" alt="project">
+					<div class="project-title">Calculator2 Page</div>
+					</a>
+					
+		</div>		
+		<div class="darken" id="darken" rel="internal">
+			<h2>Overwiev</h2></br>
+			<p>Beautiful image with dark overlay</p></br>
+			<div id="small-map-container"><a href="#contact"></a></div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1981.3620257261973!2d19.80392318800589!3d45.25319680261916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2srs!4v1539216605126" width="1200" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>	
+		
+		
+		<div  class="contact" id="contact" rel="internal">
+			<div class="header">
+			
+	</div>
+				<h1>Let's work together...</h1>
+				<p>How do you take your coffee?</p>
+			</div>
+			  <a href="https://facebook.com/freecodecamp" target="_blank" class="contact-details">Facebook</a>
+			  <a id='profile-link' href="https://github.com/freecodecamp" target="_blank" class="contact-details">GitHub</a>
+			  <a href="https://twitter.com/freecodecamp" target="_blank" class="contact-details">Twitter</a>
+			  <a href="www.development9@gmail.com" class="contact-details">Send a mail</a>
+			  <!--<a href="tel:555-555-5555" class="contact-details">Call me</a> -->
+			</div>
+			<!-- start: Contact Form -->
+					<div id="contact-form">
+						<form method="post" action="">
+							<fieldset>
+								<div class="clearfix">
+									<label for="name"><span>Name:</span></label>
+									<div class="input">
+										<input tabindex="1" size="18" id="name" name="name" type="text" value="">
+									</div>
+								</div>
+								<div class="clearfix">
+									<label for="email"><span>Email:</span></label>
+									<div class="input">
+										<input tabindex="2" size="25" id="email" name="email" type="text" value="" class="input-xlarge">
+									</div>
+								</div>
+								<div class="clearfix">
+									<label for="message"><span>Message:</span></label>
+									<div class="input">
+										<textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
+									</div>
+								</div>
+								<div class="actions">
+									<button tabindex="3" type="submit" class="btn btn-succes btn-large">Send message</button>
+								</div>
+							</fieldset>
+						</form>
+					</div>	
+	<footer>
+	<div id="footer-menu-back-to-top">
+						<a href="#"></a>
+					</div>
+	<p>**This is my portfolio and I still buildig it up..</p>
+  <p>&copy; Created for <a href="https://zareni.github.io/test/" target="_blank">Zareni page</a></p>
+</footer>
+
+
+<script src="js/jquery-1.8.2.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/jquery.cslider.js"></script>
+<script src="js/slider.js"></script>
+<script def src="js/custom.js"></script>
+
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+<!-- <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script>
+-->
 </body>
 </html>
