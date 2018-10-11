@@ -1,0 +1,150 @@
+body{
+	font-family: Montserrat;
+	text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+	padding:none;
+	background-color: none;
+}
+
+.intro {
+  top: 0;
+  background: #e0ebe8;
+  min-height: 25vh;
+  padding-top: 45vh;
+  /*   line-height: 100vh; */
+  /*   width:100%;
+  height:96vh;
+border:solid; */
+}
+
+.intro p {
+  color: green;
+}
+
+.wellcome{
+	padding: 155px;	
+	background-color: #0001;
+}
+.nav ul {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background-color: #89c236;
+}
+.nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav ul li a:hover {
+  color: black;
+}
+
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.work .work-header {
+  margin-top: 50px;
+  color: #008080;
+  font-weight: normal;
+}
+
+.project {
+  text-decoration: none;
+  color: #008080;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid lightblue;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+  /*   background: url("https://res.cloudinary.com/dck40m3wf/image/upload/v1455459914/Portfolio/fancy-floral-pattern-384.jpg") repeat; */
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid lightblue;
+}
+
+.project-title {
+  font-weight: bold;
+}
+
+.show-all {
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto 90px;
+  background: #e0ebe8;
+  color: #008080;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid #90C695;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+
+@media only screen and (max-width: 500px) {
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 20px;
+  }
+
+  .project {
+    margin: 40px 0;
+  }
+}
+.darken {
+	height: 560px;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 10px;
+	color: white;
+	background-color: black;
+}
+footer {
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 40px;
+  margin: 10px;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+#footer-menu-back-to-top {
+	margin: 10px;
+	z-index: 999;
+}
+
+

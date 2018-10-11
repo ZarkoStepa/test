@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Domaci</title>
+	<style>
+		#wrap {width:30%;margin:0 auto;position:relative;background:#8fd8d4;}
+		#calc {}
+		#racun {
+			float:left;
+			width:94%;
+			height:30px;
+			margin:0% 2% 2% 2%;
+			text-align:right;
+			padding-right:2%;
+			}
+		#racun2 {float:left;
+			width:96%;
+			margin:2% 2% 0% 2%;}
+		.num1, .num2 {float:left; width:25%;height:50px}
+		.num2, .jednako {background-color:#E55EA2;}
+		.jednako {width:100%;height:35px;}
+		.ime {float:left; margin:5px 5px 0 5px;}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+	<form name="calc">
+	<p class="ime">CASIO</p>
+	
+	<input type="text" name="racun2" id="racun2" disabled>
+	<input type="text" name="racun" id="racun" value="0" disabled>
+	
+	
+	<input type="button" name="7" value="7" class="num1" onclick="calc.racun2.value+='7'">
+	<input type="button" name="8" value="8" class="num1" onclick="calc.racun2.value+='8'">
+	<input type="button" name="9" value="9" class="num1" onclick="calc.racun2.value+='9'">
+	<input type="button" name="/" value="/" class="num2" onclick="calc.racun2.value+='/'">
+	<input type="button" name="4" value="4" class="num1" onclick="calc.racun2.value+='4'">
+	<input type="button" name="5" value="5" class="num1" onclick="calc.racun2.value+='5'">
+	<input type="button" name="6" value="6" class="num1" onclick="calc.racun2.value+='6'">
+	<input type="button" name="*" value="*" class="num2" onclick="calc.racun2.value+='*'">
+	<input type="button" name="1" value="1" class="num1" onclick="calc.racun2.value+='1'">
+	<input type="button" name="2" value="2" class="num1" onclick="calc.racun2.value+='2'">
+	<input type="button" name="3" value="3" class="num1" onclick="calc.racun2.value+='3'">
+	<input type="button" name="-" value="-" class="num2" onclick="calc.racun2.value+='-'">
+	<input type="button" name="." value="." class="num1" onclick="calc.racun2.value+='.'">
+	<input type="button" name="0" value="0" class="num1" onclick="calc.racun2.value+='0'">
+	<input type="reset" name="c" value="C" class="num2" >
+	<input type="button" name="+" value="+" class="num2" onclick="calc.racun2.value+='+'">
+	<input type="button" name="submit" value="=" class="jednako" onclick="calc.racun.value=eval(calc.racun2.value)">
+	
+	</form>
+	
+	</div>
+	
+</body>
+</html>
