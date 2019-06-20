@@ -1,7 +1,7 @@
 body{
 	font-family: Montserrat;
 	text-align: center;
-}
+}	
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +14,8 @@ header {
 .intro {
   top: 0;
   background: #e0ebe8;
-  min-height: 25vh;
-  padding-top: 45vh;
+  min-height: 37vh;
+  padding-top: 55vh;
   /*   line-height: 100vh; */
   /*   width:100%;
   height:96vh;
@@ -27,7 +27,7 @@ border:solid; */
 }
 
 .wellcome{
-	padding: 155px;	
+	padding: 255px;	
 	background-color: #0001;
 }
 .nav ul {
@@ -127,6 +127,8 @@ footer {
   color: white;
   line-height: 40px;
   margin: 10px;
+  animation: 1.5s 5s float infinite linear;
+
 }
 .clearfix {
   *zoom: 1;
@@ -146,5 +148,4 @@ footer {
 	margin: 10px;
 	z-index: 999;
 }
-
 
