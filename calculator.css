@@ -1,12 +1,11 @@
 
 .digitron{
-
-width:265px;
-height:350px;
-border-radius:15px;
-border:2px solid black;
-background:yellow;
-font-size:15px;
+	width:265px;
+	height:350px;
+	border-radius:15px;
+	border:2px solid black;
+	background:yellow;
+	font-size:15px;
 }
 input{
 	border-radius:10px;
