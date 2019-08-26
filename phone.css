@@ -23,7 +23,7 @@ body
 {
 	position: absolute;
 	width: 100%;
-	transition: 0.5s;
+	transition: 0.7s;
 }
 .container:hover img:nth-child(4)
 {
