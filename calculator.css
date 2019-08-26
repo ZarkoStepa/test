@@ -1,7 +1,7 @@
 
 .digitron{
 
-width:340px;
+width:320px;
 height:380px;
 border-radius:15px;
 border:2px solid black;
@@ -10,7 +10,7 @@ font-size:15px;
 }
 input{
 	border-radius:10px;
-	padding:20px;
+	padding:10px;
 	margin:5px;
 	height:25px;
 	width:52px;
