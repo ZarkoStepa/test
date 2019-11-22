@@ -4,13 +4,13 @@ body{
 	background-position: center;
 	background-size: cover;
 	font-family: sans-serif;
-	background:  url(wallpaper4.jpg) no-repeat;
+	background:  url(wallpaper2.jpg) no-repeat;
 	background-size: cover;
 }
-.login{
+.login{	 	
 	width: 320px;
 	height: 420px;
-	background: none; 
+	background: black; 
 	color: #fff;
 	top: 50%;
 	left: 50%;
