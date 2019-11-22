@@ -17,13 +17,15 @@ body
 	margin-top: 100px;
 	background: rgb(0,0,0,.1);
 	transform: rotate(-30deg) skew(25deg) scale(.8);
-	transition: 0.5s;
+	transition: 0.7s;
+	border-radius: 60px;
 }
 .container img 
 {
 	position: absolute;
 	width: 100%;
-	transition: 0.5s;
+	transition: 0.8s;
+	border-radius: 40px;
 }
 .container:hover img:nth-child(4)
 {
