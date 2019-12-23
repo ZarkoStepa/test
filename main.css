@@ -15,13 +15,16 @@ header {
   top: 0;
   background: #e0ebe8;
   min-height: 37vh;
-  padding-top: 55vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
   /*   line-height: 100vh; */
   /*   width:100%;
   height:96vh;
 border:solid; */
 }
-
+image{
+  background-image: url("test/me.png");
+}
 .intro p {
   color: green;
 }

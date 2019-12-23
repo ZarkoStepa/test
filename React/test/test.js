@@ -8,10 +8,10 @@ const code = fs.readFileSync('main.js', 'utf8');
 describe('', function () {
   it('', function() {
     let structureOne = function() {
-      bubbleShape = 'square'
+      var wordToDisplay = "JavaScript"
     };
     let isMatchOne = Structured.match(code, structureOne);
    
-    assert.isOk(isMatchOne, 'Did you set bubbleShape equal to "square"? Capitalization matters!');
+    assert.isOk(isMatchOne, 'Did you set the variable wordToDisplay equal to "JavaScript"? Capitalization matters!');
   });
 });
