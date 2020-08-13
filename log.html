@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-	background:  url(wallpaper4.jpg) no-repeat;
+	background:  url(wallpaper3.jpg) no-repeat;
 	background-size: cover;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -97,7 +97,7 @@ span.psw {
 <form  action="index.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
     	return false;">
   <div class="imgcontainer">
-    <img src="shell.jpg" alt="Avatar" class="avatar" >
+    <img src="shell.png" alt="Avatar" class="avatar" >
   </div>
 
   <div class="container">
@@ -142,18 +142,6 @@ window.onclick = function(event) {
         }
     }
     </script>
-<script>
-    $(function()
-    {
-        $('#form-login').validate()
-    })
-</script>
-<script type="text/javascript">
-    function recaptcha_callback() {
-        $('#signBtn').removeAttr('disabled');
-        $("#signBtn").removeClass("inactive");
-    };
-</script>
 
  
 </body>
