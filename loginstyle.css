@@ -1,140 +1,82 @@
-/* Style for the login page */
-
-* {
-	box-sizing: border-box;
-  }
-  
-  body {
+/* Set font and background color for body */
+body {
+	font-family: Arial, sans-serif;
 	background-color: #f2f2f2;
-	/* background-color: #f1f1f1; */
-	font-family: Arial, Helvetica, sans-serif;
-	
   }
   
-  .wellcome {
-	text-align: center;
-	padding: 50px;
-	background-color: #333;
-	color: #fff;
-  }
-  
-  .modal {
-	border-radius: 5px;
-	max-width: 500px;
-	margin: auto;
-	background-color: #fefefe;
+  /* Style container div */
+  #container {
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
 	padding: 20px;
-	margin-top: 30px;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+	border: 1px solid #ccc;
+	background-color: #fff;
   }
   
+  /* Style login div */
+  .login {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  /* Style avatar image */
   .avatar {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	margin: auto;
-	display: block;
+	margin-bottom: 10px;
   }
   
-  .container {
-	padding: 16px;
+  /* Style login heading */
+  h1 {
+	margin: 0;
+	font-size: 24px;
+	color: #333;
   }
   
-  label {
-	font-size: 20px;
-	font-weight: bold;
+  /* Style labels for username and password fields */
+  form p {
+	margin: 0;
+	font-size: 18px;
+	color: #333;
+	margin-bottom: 5px;
   }
   
+  /* Style input fields */
   input[type="text"],
   input[type="password"] {
 	width: 100%;
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-  }
-  
-  button[type="submit"] {
-	background-color: #333;
-	color: #fff;
-	padding: 14px 20px;
-	margin: 8px 0;
+	padding: 10px;
+	margin-bottom: 15px;
 	border: none;
-	border-radius: 4px;
-	cursor: pointer;
+	border-radius: 3px;
+	background-color: #f2f2f2;
+	font-size: 16px;
+  }
+  
+  /* Style submit button */
+  input[type="submit"] {
 	width: 100%;
-  }
-  
-  button[type="submit"]:hover {
-	background-color: #555;
-  }
-  
-  .cancelbtn {
-	width: auto;
-	padding: 10px 18px;
-	background-color: #f44336;
-	color: white;
+	padding: 10px;
+	margin-top: 20px;
 	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-	float: right;
-  }
-  
-  .psw {
-	float: right;
-  }
-  
-  @media screen and (max-width: 300px) {
-	span.psw {
-	  display: block;
-	  float: none;
-	}
-	.cancelbtn {
-	  width: 100%;
-	}
-  }
-  form {
-	background-color: #fff;
-	border: 3px solid #ddd;
-	padding: 20px;
-	width: 300px;
-	margin: 50px auto;
-	text-align: center;
-}
-input[type=text], input[type=password] {
-	padding: 12px 20px;
-	margin: 8px 0;
-	display: inline-block;
-	border: 1px solid #ccc;
-	box-sizing: border-box;
-	width: 100%;
-}
-button {
+	border-radius: 3px;
 	background-color: #4CAF50;
-	color: white;
-	padding: 14px 20px;
-	margin: 8px 0;
-	border: none;
+	color: #fff;
+	font-size: 16px;
 	cursor: pointer;
-	width: 100%;
-}
-
-button:hover {
-	opacity: 0.8;
-}
-
-.password-toggle {
-position: relative;
-}
-.password-toggle input[type="password"] {
-padding-right: 30px;
-}
-.password-toggle .toggle-password {
-position: absolute;
-right: 0;
-top: 50%;
-transform: translateY(-50%);
-cursor: pointer;
-}
+  }
+  
+  /* Style forgot password and sign up links */
+  a {
+	text-decoration: none;
+	color: #333;
+	font-size: 16px;
+	margin-right: 10px;
+  }
+  
+  a:hover {
+	color: #4CAF50;
+  }
+  

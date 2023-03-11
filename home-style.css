@@ -1,113 +1,73 @@
-/* General Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #ffb6c1; /* added tropical color background */
+  background-color: #3a0ca3; /* set the background color to a fancy purple */
 }
 
-a {
-  text-decoration: none;
-  color: #333;
+#container {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 80px;
 }
 
-ul {
-  list-style: none;
+form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
 }
 
-/* Header Styles */
-
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+.login {
+  text-align: center;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav li {
-  margin: 0 20px;
-}
-
-nav a {
-  font-size: 18px;
-  color: #fff; /* added white color */
-}
-
-/* Main Styles */
-
-main {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px;
-}
-
-aside {
-  flex: 0 0 20%;
-  background-color: #fff;
-  padding: 20px;
-  margin-right: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-aside ul li {
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
   margin-bottom: 10px;
 }
 
-section {
-  flex: 1 0 75%;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #3a0ca3; /* set the text color to a matching fancy purple */
 }
 
-section h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
+p {
+  margin: 20px 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3a0ca3; /* set the text color to a matching fancy purple */
 }
 
-section p {
-  font-size: 20px;
+input[type="text"], input[type="password"], input[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #3a0ca3; /* set the border color to a matching fancy purple */
+  border-radius: 4px;
+  font-size: 18px;
 }
 
-/* Responsive Styles */
+input[type="submit"] {
+  background-color: #3a0ca3; /* set the background color to a matching fancy purple */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-@media screen and (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
+input[type="submit"]:hover {
+  background-color: #ffcb74; /* set the background color to a matching fancy yellow on hover */
+}
 
-  aside {
-    margin-right: 0;
-    margin-bottom: 20px;
-    flex: 0 0 auto;
-  }
+a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #3a0ca3; /* set the text color to a matching fancy purple */
+  font-size: 18px;
+}
 
-  section {
-    flex: 1 0 auto;
-  }
-
-  nav ul {
-    flex-direction: column;
-    margin-top: 20px;
-  }
-
-  nav li {
-    margin: 10px 0;
-  }
+a:hover {
+  color: #ffcb74; /* set the text color to a matching fancy yellow on hover */
 }
