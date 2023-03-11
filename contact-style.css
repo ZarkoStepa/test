@@ -1,53 +1,102 @@
-/* CSS code for the header */
-
-/* Style for the navigation bar */
-nav {
-  background-color: #333; /* Change the background color */
-  height: 50px;
-}
-
-/* Style for the links */
-nav ul {
-  list-style-type: none;
+/* Reset default styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
-nav li {
-  float: left;
+/* Apply styles to body and its children */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-nav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li + li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
   text-decoration: none;
-  font-size: 18px; /* Change the font size */
-  font-family: 'Open Sans', sans-serif; /* Change the font family */
-  text-transform: uppercase; /* Change the text to uppercase */
 }
 
-nav li a:hover {
-  background-color: #111; /* Change the background color on hover */
+nav a:hover {
+  text-decoration: underline;
 }
 
-/* Add a logo image */
-nav .logo {
-  float: left;
+main {
+  padding: 1rem;
 }
 
-nav .logo img {
-  height: 40px;
-  padding: 5px;
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* CSS code for the main section */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
 
-/* Style for the h1 heading */
-section h1 {
-  font-size: 32px; /* Change the font size */
-  font-weight: bold; /* Make the font bold */
-  margin-bottom: 20px; /* Add some space below the heading */
+label {
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #666;
+}
+
+#error-email {
+  color: red;
+  display: none;
+  margin-bottom: 1rem;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #444;
+}
+
+#toast-message {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  display: none;
 }
