@@ -1,85 +1,95 @@
-body{
-	margin:0;
-	padding: 0;
-	background-position: center;
-	background-size: cover;
-	font-family: sans-serif;
-	background:  url(wallpaper2.jpg) no-repeat;
-	background-size: cover;
-}
-.login{	 	
-	width: 320px;
-	height: 420px;
-	background: black; 
-	color: #fff;
-	top: 50%;
-	left: 50%;
-	position: absolute;
-	transform: translate(-50%,-50%);
+/* Style for the login page */
+
+* {
 	box-sizing: border-box;
-	padding: 80px 70px;
-}
-.avatar{
+  }
+  
+  body {
+	background-color: #f2f2f2;
+  }
+  
+  .wellcome {
+	text-align: center;
+	padding: 50px;
+	background-color: #333;
+	color: #fff;
+  }
+  
+  .modal {
+	border-radius: 5px;
+	max-width: 500px;
+	margin: auto;
+	background-color: #fefefe;
+	padding: 20px;
+	margin-top: 30px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .avatar {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
-	position: absolute;
-	left: calc(50% - 50px);
-	top: -50px;
-}
-h1{
-	margin: 0;
-	padding: 0 0 20px;
-	text-align: center;
-	font-size: 22px;
-}
-.login p{
-	margin: 0;
-	padding: 0;
+	margin: auto;
+	display: block;
+  }
+  
+  .container {
+	padding: 16px;
+  }
+  
+  label {
+	font-size: 20px;
 	font-weight: bold;
-}
-.login input{
+  }
+  
+  input[type="text"],
+  input[type="password"] {
 	width: 100%;
-	margin-bottom: 20px;
-}
-.login input[type="text"], input[type="password"] {
-	border: none;
-	border-bottom: 1px solid #fff;
-	background: transparent;
-	outline: none;
-	height: 20px;
-	color: #fff;
-	font-size:12px;
-}
-.login input[type="submit"] {
-	border: none;
-	outline: none;
-	height: 20px;
-	background: #fb2525;
-	color: #fff;
-	font-size: 18px;	
-	border-radius: 20px;
-} 
-.login input[type="submit"]:hover {
-	cursor: pointer;
-	color: #000;
-}
-.login a {
-	text-decoration: none;
-	font-size: 12px;
-	line-height: 20px;
-	color: darkgrey;
-}
-.lohin a:hover{
-	color: #ffc107;
-}
-.login input[type="text"], input[type="checkbox"] {
-	border: none;
-	outline: none;
-	
-	text-decoration: none;
-	font-size: 12px;
-	line-height: 20px;
-	color: darkgrey;
+	padding: 12px 20px;
+	margin: 8px 0;
 	display: inline-block;
-}	
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+	background-color: #333;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+	background-color: #555;
+  }
+  
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  
+  .psw {
+	float: right;
+  }
+  
+  @media screen and (max-width: 300px) {
+	span.psw {
+	  display: block;
+	  float: none;
+	}
+	.cancelbtn {
+	  width: 100%;
+	}
+  }
+  
