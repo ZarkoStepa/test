@@ -1,26 +1,21 @@
-/* Set font and background color for body */
-body {
-	font-family: Arial, sans-serif;
-	background-color: #f2f2f2;
-  }
-  
-  /* Style container div */
-  #container {
-	width: 500px;
-	margin: 0 auto;
+#container {
+	background-color: #F9B7FF;
+	width: 400px;
+	margin: auto;
 	margin-top: 50px;
-	padding: 20px;
-	border: 1px solid #ccc;
-	background-color: #fff;
-  }
-  
-  /* Style login div */
-  .login {
+	padding: 30px;
+	border-radius: 15px;
 	text-align: center;
-	margin-bottom: 20px;
   }
   
-  /* Style avatar image */
+  .login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+  }
+  
   .avatar {
 	width: 100px;
 	height: 100px;
@@ -28,55 +23,50 @@ body {
 	margin-bottom: 10px;
   }
   
-  /* Style login heading */
   h1 {
-	margin: 0;
-	font-size: 24px;
-	color: #333;
+	font-size: 2.5rem;
+	color: #3F3D56;
+	margin-bottom: 0;
   }
   
-  /* Style labels for username and password fields */
-  form p {
-	margin: 0;
-	font-size: 18px;
-	color: #333;
-	margin-bottom: 5px;
+  p {
+	font-size: 1.2rem;
+	color: #3F3D56;
+	margin-bottom: 0;
+	text-align: left;
+	margin-left: 10px;
   }
   
-  /* Style input fields */
   input[type="text"],
-  input[type="password"] {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 15px;
-	border: none;
-	border-radius: 3px;
-	background-color: #f2f2f2;
-	font-size: 16px;
-  }
-  
-  /* Style submit button */
+  input[type="password"],
   input[type="submit"] {
 	width: 100%;
 	padding: 10px;
-	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
 	border: none;
-	border-radius: 3px;
-	background-color: #4CAF50;
-	color: #fff;
-	font-size: 16px;
+	font-size: 1.2rem;
+  }
+  
+  input[type="submit"] {
+	background-color: #3F3D56;
+	color: #FFF;
+	font-weight: bold;
 	cursor: pointer;
   }
   
-  /* Style forgot password and sign up links */
+  input[type="submit"]:hover {
+	background-color: #8E44AD;
+  }
+  
   a {
+	font-size: 1rem;
+	color: #3F3D56;
 	text-decoration: none;
-	color: #333;
-	font-size: 16px;
-	margin-right: 10px;
   }
   
   a:hover {
-	color: #4CAF50;
+	color: #8E44AD;
   }
+  
   
