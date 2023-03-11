@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>Login page</title>
 	<link rel="stylesheet" type="text/css" href="loginstyle.css">
 </head>
+
 <body>
 	<div id="container">
 		<form action="index.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
@@ -25,15 +27,44 @@
 		</form>
 
 		<script type="text/javascript">
-		    function login(username, password) {
-		        if (username == "admin" && password == "admin") {
-		            window.location = "home.html";
-		        } else {
-		            alert("Wrong username or password");
-		            window.location = "forgot_password.html.html";
-		        }
-		    }
+			function login(username, password) {
+				if (username == "admin" && password == "admin") {
+					window.location = "home.html";
+				} else {
+					alert("Wrong username or password");
+					window.location = "forgot_password.html.html";
+				}
+			}
 		</script>
 	</div>
 </body>
-</html> 
+
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stranica za prijavu</title>
+  </head>
+  <body>
+    <h1>Dobrodošli! Molimo Vas prijavite se.</h1>
+    <form>
+      <label for="email">E-pošta:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="password">Lozinka:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <input type="submit" value="Prijavi se">
+    </form>
+    <script type="text/javascript">
+		function login(username, password) {
+			if (username == "admin" && password == "admin") {
+				window.location = "home.html";
+			} else {
+				alert("Wrong username or password");
+				window.location = "forgot_password.html.html";
+			}
+		}
+	</script>
+  </body>
+</html>

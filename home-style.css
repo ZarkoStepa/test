@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #cadff7;
+  background-color: #becee0;
 }
 
 header {
   background-color: #005091;
-  color: #ffffff;
+  color: hsl(234, 9%, 46%);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -59,7 +59,7 @@ aside li {
 }
 
 aside a {
-  color: #fff;
+  color: #6ba8da;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -71,7 +71,7 @@ aside a:hover {
 }
 
 section {
-  background-color: #fff;
+  background-color: #5471c0;
   padding: 20px;
   flex-grow: 1;
 }
