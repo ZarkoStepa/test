@@ -1,23 +1,36 @@
+.digitron {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+}
 
-.digitron{
-	width:300px;
-	height:360px;
-	border-radius:15px;
-	border:2px solid black;
-	background:yellow;
-	font-size:15px;
+.digitron p {
+    font-size: 24px;
+    margin-top: 0;
 }
-input{
-	border-radius:10px;
-	padding:20px;
-	margin:5px;
-	height:25px;
-	width:52px;
-	font-size:20px;
+
+.digitron input[type=textfield] {
+    background-color: #666;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
 }
-p{	
-	font-family:Roboto;
-	font-size:25px;
-	color:black;
-	text-align:center;
-}	
+
+.digitron input[type=button] {
+    background-color: #999;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.digitron input[type=button]:hover {
+    background-color: #777;
+}

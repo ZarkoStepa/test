@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #005091;
+  background-color: #c3d1db;
   color: hsl(234, 9%, 46%);
   padding: 20px;
   display: flex;
@@ -136,7 +136,7 @@ aside {
 }
 
 section {
-  background-color: #5471c0;
+  background-color: #a7b2d3;
   padding: 20px;
   flex-grow: 1;
 }
