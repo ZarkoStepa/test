@@ -7,40 +7,33 @@
 </head>
 <body>
 	<div id="container">
-    	<form action="index.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
+		<form action="index.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
     	return false;">
-	<div class="login">
+			<div class="login">
+				<img src="ico.png" class="avatar">
+				<h1>Login here</h1>
+			</div>
 
-		<img src="ico.png" class="avatar">
-		<h1>Login here</h1>
-			<script type="text/javascript">
-    function login(username, password) {
-        if (username == "admin" && password == "admin") {
-            //window.location = "welcome.html";
-            window.location = "login.html";
-            
-        } else {
-
-            window.location = "error.html";
-            alert("Wrong usrname or password")
-        }
-    }
-    </script>
-
-		
 			<p>Username</p>
-
 			<input type="text" name="username" id="username" placeholder="username" value="" required="">
 			<p>Password</p>
-			<input type="password" name="password" id="password" value="" placeholder="username" required="">
-			<input type="submit" name="button" valuesubmit="Sign In" action="index.html">
-			<a href="index.html" action="index.html">
+			<input type="password" name="password" id="password" value="" placeholder="password" required="">
+			<input type="submit" name="button" value="Sign In" action="index.html">
 
-	
-		<a href="#">Lost your password?</a></br>
-		<a href="#">Don't have an account?</a>
+			<a href="#">Lost your password?</a></br>
+			<a href="#">Don't have an account?</a>
 		</form>
 
+		<script type="text/javascript">
+		    function login(username, password) {
+		        if (username == "admin" && password == "admin") {
+		            window.location = "home.html";
+		        } else {
+		            alert("Wrong username or password");
+		            window.location = "error.html";
+		        }
+		    }
+		</script>
 	</div>
 </body>
 </html> 
