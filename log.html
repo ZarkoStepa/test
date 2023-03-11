@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -146,5 +146,50 @@ window.onclick = function(event) {
     </script>
 
  
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="loginstyle.css">
+</head>
+<body>
+  <div class="wellcome"><h1>Welcome to my portfolio</h1></div>
+  <div class="modal">
+    <form action="#" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); return false;">
+      <div class="imgcontainer">
+        <img src="shell.png" alt="Avatar" class="avatar">
+      </div>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <button type="submit">Login</button>
+        <br>
+        <label>
+          <input type="checkbox"  name="remember"> Remember me
+        </label>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    function login(username, password) {
+      if (username == "admin" && password == "admin") {
+        window.location = "log.html";
+      } else {
+        alert("Wrong username or password");
+      }
+    }
+  </script>
 </body>
 </html>
