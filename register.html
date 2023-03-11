@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="home.html">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <label>Gender:</label>
+            <div class="radio-buttons">
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="other">
+                    Other
+                </label>
+            </div>
+
+            <label for="employed">Employed:</label>
+            <input type="checkbox" id="employed" name="employed">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
