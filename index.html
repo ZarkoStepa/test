@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+De<!DOCTYPE html>
 <html>
 <head>
 	<title>Login Page</title>
@@ -35,6 +35,24 @@
 		button:hover {
 			opacity: 0.8;
 		}
+<style>
+.password-toggle {
+   position: relative;
+}
+.password-toggle input[type="password"] {
+   padding-right: 30px;
+}
+.password-toggle .toggle-password {
+   position: absolute;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+</style>
+
+</script>
+
 	</style>
 </head>
 <body>
@@ -52,6 +70,20 @@
   <label for="show-password">Prikaži lozinku</label>
 </div>
 
+<div class="password-toggle">
+  <input type="password" id="password" name="password">
+  <i class="toggle-password fas fa-eye"></i>
+</div>
+
+<script>
+const togglePassword = document.querySelector('.toggle-password');
+const password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function() {
+  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+  password.setAttribute('type', type);
+  this.classList.toggle('fa-eye-slash');
+});
 <script>
 const showPassword = document.querySelector('#show-password');
 const password = document.querySelector('#password');
