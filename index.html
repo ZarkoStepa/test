@@ -35,7 +35,7 @@ De<!DOCTYPE html>
 		button:hover {
 			opacity: 0.8;
 		}
-<style>
+
 .password-toggle {
    position: relative;
 }
@@ -53,7 +53,6 @@ De<!DOCTYPE html>
 
 </script>
 
-	</style>
 </head>
 <body>
 <div class="password-toggle">
@@ -63,15 +62,11 @@ De<!DOCTYPE html>
 		<input type="text" placeholder="Enter Username" name="username" required>
 		<label for="password"><b>Password</b></label>
 		<input type="password" id="password" name="password" placeholder="Enter Password" name="password" required>
-                <input type="checkbox" id="show-password">
+                <input type="checkbox" id="show-password" <i class="toggle-password fas fa-eye"></i>
+  <label for="show-password">Prikaži lozinku</label>>
 		<button type="submit">Login</button>
 	</form>
-  <i class="toggle-password fas fa-eye"></i>
-  <label for="show-password">Prikaži lozinku</label>
-</div>
-
-
-  
+  <\div>
 <script>
 const togglePassword = document.querySelector('.toggle-password');
 const password = document.querySelector('#password');
