@@ -1,104 +1,116 @@
-/* Global styles */
+/* General Styles */
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
 }
 
-/* Header styles */
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Styles */
+
 header {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
+  display: flex;
 }
 
 nav li {
-    margin-right: 1rem;
+  margin: 0 20px;
 }
 
 nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+  font-size: 18px;
 }
 
 nav a:hover {
-    color: #ffd700;
+  color: #ccc;
 }
 
-/* Main styles */
+/* Main Styles */
+
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
 }
 
 aside {
-    flex-basis: 20%;
+  flex: 0 0 20%;
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-aside ul {
-    list-style: none;
-    margin-bottom: 1rem;
-}
-
-aside li {
-    margin-bottom: 0.5rem;
-}
-
-aside a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-aside a:hover {
-    color: #ffd700;
+aside ul li {
+  margin-bottom: 10px;
 }
 
 section {
-    flex-basis: 75%;
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  flex: 1 0 75%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 section p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+  font-size: 20px;
 }
 
-/* Media queries */
+/* Responsive Styles */
+
 @media screen and (max-width: 768px) {
-    main {
-        flex-direction: column;
-    }
-    
-    aside {
-        flex-basis: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    section {
-        flex-basis: 100%;
-    }
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex: 0 0 auto;
+  }
+
+  section {
+    flex: 1 0 auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
 }
