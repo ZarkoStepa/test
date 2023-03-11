@@ -10,7 +10,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f2f2f2;
+  background-color: #ffb6c1; /* added tropical color background */
 }
 
 a {
@@ -46,26 +46,34 @@ nav li {
 
 nav a {
   font-size: 18px;
-}
-
-nav a:hover {
-  color: #ccc;
+  color: #fff; /* added white color */
 }
 
 /* Main Styles */
 
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 60px);
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+aside {
+  flex: 0 0 20%;
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside ul li {
+  margin-bottom: 10px;
 }
 
 section {
+  flex: 1 0 75%;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 50%;
 }
 
 section h1 {
@@ -73,38 +81,33 @@ section h1 {
   margin-bottom: 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  margin-bottom: 10px;
+section p {
   font-size: 20px;
 }
 
-input, textarea {
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 20px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
+/* Responsive Styles */
 
-textarea {
-  height: 150px;
-}
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
 
-button[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  font-size: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  aside {
+    margin-right: 0;
+    margin-bottom: 20px;
+    flex: 0 0 auto;
+  }
 
-button[type
+  section {
+    flex: 1 0 auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
