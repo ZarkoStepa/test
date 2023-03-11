@@ -1,70 +1,59 @@
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="utf-8">
-	<title>Login page</title>
-	<link rel="stylesheet" type="text/css" href="loginstyle.css">
-</head>
-
-<body>
-	<div id="container">
-		<form action="index.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
-    	return false;">
-			<div class="login">
-				<img src="ico.png" class="avatar">
-				<h1>Login here</h1>
-			</div>
-
-			<p>Username</p>
-			<input type="text" name="username" id="username" placeholder="username" value="" required="false">
-			<p>Password</p>
-			<input type="password" name="password" id="password" value="" placeholder="password" required="false">
-			<input type="submit" name="button" value="Sign In" action="index.html">
-
-			<a href="#">Lost your password?</a></br>
-			<a href="#">Don't have an account?</a>
-		</form>
-
-		<script type="text/javascript">
-			function login(username, password) {
-				if (username == "admin" && password == "admin") {
-					window.location = "home.html";
-				} else {
-					alert("Wrong username or password");
-					window.location = "forgot_password.html.html";
-				}
-			}
-		</script>
-	</div>
-</body>
-
-</html> -->
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Stranica za prijavu</title>
-  </head>
-  <body>
-    <h1>Dobrodošli! Molimo Vas prijavite se.</h1>
-    <form>
-      <label for="email">E-pošta:</label>
-      <input type="email" id="email" name="email" required>
-      <br>
-      <label for="password">Lozinka:</label>
-      <input type="password" id="password" name="password" required>
-      <br>
-      <input type="submit" value="Prijavi se">
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="loginstyle.css">
+</head>
+<body>
+  <div class="wellcome"><h1>Welcome to my portfolio</h1></div>
+  <div class="modal">
+    <form action="#" method="post" onsubmit="event.preventDefault();">
+      <div class="imgcontainer">
+        <img src="shell.png" alt="Avatar" class="avatar" aria-label="Avatar">
+      </div>
+      <div class="container">
+        <label for="username"><b>Username</b></label>
+        <input type="text" id="username" placeholder="Enter Username" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" id="password" placeholder="Enter Password" required>
+
+        <button type="button" onclick="login()">Login</button>
+        <br>
+        <div>
+          <label>
+            <input type="checkbox" id="remember" name="remember">
+            <span>Remember me</span>
+          </label>
+        </div>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </div>
     </form>
-    <script type="text/javascript">
-		function login(username, password) {
-			if (username == "admin" && password == "admin") {
-				window.location = "home.html";
-			} else {
-				alert("Wrong username or password");
-				window.location = "forgot_password.html.html";
-			}
-		}
-	</script>
-  </body>
+  </div>
+
+  <script type="text/javascript">
+    const loginForm = document.querySelector('form');
+    const usernameInput = document.querySelector('#username');
+    const passwordInput = document.querySelector('#password');
+    const rememberCheckbox = document.querySelector('#remember');
+
+    loginForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      login();
+    });
+
+    function login() {
+      if (usernameInput.value === "admin" && passwordInput.value === "admin") {
+        window.location = "log.html";
+      } else {
+        alert("Wrong username or password");
+      }
+    }
+  </script>
+</body>
 </html>

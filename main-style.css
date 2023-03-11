@@ -1,0 +1,49 @@
+body {
+    background-color: #4CAF50; /* zelena pozadina */
+    font-family: Arial, sans-serif; /* font za tekst */
+    color: #fff; /* bela boja teksta */
+  }
+  
+  h1 {
+    font-size: 2em; /* veličina naslova */
+    text-align: center; /* poravnanje naslova */
+    padding: 20px; /* dodatni prostor oko naslova */
+  }
+  
+  form {
+    background-color: #fff; /* bela pozadina forme */
+    border-radius: 10px; /* zaobljeni uglovi forme */
+    padding: 20px; /* dodatni prostor oko forme */
+    max-width: 400px; /* maksimalna širina forme */
+    margin: 0 auto; /* centralizovanje forme */
+  }
+  
+  label {
+    display: block; /* svaka oznaka novi red */
+    margin-bottom: 10px; /* dodatni prostor ispod oznake */
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px; /* dodatni prostor unutar polja */
+    width: 100%; /* puna širina polja */
+    border-radius: 5px; /* zaobljeni uglovi polja */
+    border: none; /* bez ivice polja */
+    margin-bottom: 20px; /* dodatni prostor ispod polja */
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* zelena boja dugmeta */
+    color: #fff; /* bela boja teksta na dugmetu */
+    padding: 10px 20px; /* dodatni prostor unutar dugmeta */
+    border: none; /* bez ivice na dugmetu */
+    border-radius: 5px; /* zaobljeni uglovi dugmeta */
+    cursor: pointer; /* kursor menja oblik kada se pređe preko dugmeta */
+    transition: background-color 0.3s ease; /* glatka tranzicija boje pozadine */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #fff; /* bela boja pozadine na hover */
+    color: #4CAF50; /* zelena boja teksta na hover */
+  }
+  

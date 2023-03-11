@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Login Page</title>
@@ -31,4 +31,42 @@ togglePassword.addEventListener('click', function() {
 
 </div>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stranica za prijavu</title>
+	<link rel="stylesheet" type="text/css" href="home-style.css">
+  </head>
+  <body>
+    <h1>Dobrodošli! Molimo Vas prijavite se.</h1>
+    <form>
+      <label for="email">E-pošta:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="password">Lozinka:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      <input type="submit" value="Prijavi se">
+    </form>
+	
+    <script>
+		const togglePassword = document.querySelector('.toggle-password');
+		const password = document.querySelector('#password');
+		
+		togglePassword.addEventListener('click', function() {
+		  const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+		  password.setAttribute('type', type);
+		  this.classList.toggle('fa-eye-slash');
+		});
+		function login(username, password) {
+  if (username == "admin" && password == "admin") {
+    window.location.href = "home.html"; // redirect to home.html page
+  } else {
+    alert("Wrong username or password");
+  }
+}
+		</script>
+		
+  </body>
 </html>
