@@ -163,47 +163,43 @@
 </body>
 </html> --> -->
 
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="js.js" rel="stylesheet" type="text/js">
-	<link rel="stylesheet" type="text/css" href="forgotpasswordstyle.css">
-
+	<meta charset="utf-8">
+	<title>Login page</title>
+	<link rel="stylesheet" type="text/css" href="loginstyle.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Login Page</h1>
-		<form>
-			<div class="form-input">
-				<input type="text" name="username" placeholder="Username">
-			</div>
-			<div class="form-input">
-				<input type="password" name="password" placeholder="Password">
-			</div>
-			<div class="form-input">
-				<input type="submit" value="Login">
-			</div>
-			<div class="form-input">
-				<a href="forgot_password.html.html">Forgot Password?</a>
-			</div>
-			<div class="form-input">
-				<a href="#">Register</a>
+	<div id="container">
+    	<form name="login_form" onsubmit="return login();">
+			<div class="login">
+				<img src="ico.png" class="avatar">
+				<h1>Login here</h1>
+				<p>Username</p>
+				<input type="text" name="username" id="username" placeholder="username" value="" required="">
+				<p>Password</p>
+				<input type="password" name="password" id="password" value="" placeholder="password" required="">
+				<input type="submit" name="button" value="Sign In">
+				<a href="#">Lost your password?</a></br>
+				<a href="#">Don't have an account?</a>
 			</div>
 		</form>
 	</div>
-	<footer>
-	 <div id="footer-menu-back-to-top">
-						<a href="#"></a>
-						
-					</div>
-					<marquee attribute_name="attribute_value"....more attributes style="text-align: initial;"> <h3>
-            <p>**This is my portfolio and I still buildig it up..</p>
-        </h3>
-        </marquee>
-	<p>&copy; Created for <a href="https://zareni.github.io/test/" target="_blank">Zareni page</a></p> -->
-</footer>
+
+	<script type="text/javascript">
+		function login() {
+			var username = document.getElementById('username').value;
+			var password = document.getElementById('password').value;
+			if (username == "admin" && password == "admin") {
+				window.location.href = "home.html";
+				return false;
+			} else {
+				alert("Wrong username or password");
+				return false;
+			}
+		}
+	</script>
+
 </body>
 </html>
