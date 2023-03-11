@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id="container">
-		<form action="index.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
+		<form action="home.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
     	return false;">
 			<div class="login">
 				<img src="ico.png" class="avatar">
@@ -16,10 +16,10 @@
 			</div>
 
 			<p>Username</p>
-			<input type="text" name="username" id="username" placeholder="username" value="" required="false">
+			<input type="text" name="username" id="username" placeholder="username" value="" required="true">
 			<p>Password</p>
-			<input type="password" name="password" id="password" value="" placeholder="password" required="false">
-			<input type="submit" name="button" value="Sign In" action="index.html">
+			<input type="password" name="password" id="password" value="" placeholder="password" required="true">
+			<input type="submit" name="button" value="Sign In">
 
 			<a href="#">Lost your password?</a></br>
 			<a href="#">Don't have an account?</a>
@@ -31,10 +31,10 @@
 		            window.location = "home.html";
 		        } else {
 		            alert("Wrong username or password");
-		            window.location = "forgot_password.html.html";
+		            window.location = "forgot_password.html";
 		        }
 		    }
 		</script>
 	</div>
 </body>
-</html> 
+</html>

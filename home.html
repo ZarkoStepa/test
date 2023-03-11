@@ -12,7 +12,7 @@
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Contact me</a></li>
-                <li><a href="#">Log Out</a></li>
+                <li><a href="#" onclick="logout()">Log Out</a></li>
             </ul>
         </nav>
     </header>
@@ -29,5 +29,10 @@
             <p>This is the home page of my portfolio after login.</p>
         </section>
     </main>
+    <script>
+        function logout() {
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 </html>
