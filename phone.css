@@ -9,23 +9,22 @@ body
 	justify-content: center;
 	background: black;
 }
-.container
-{
+.container {
 	position: relative;
-	width: 340px;
-	height: 540px;
+	width: 680px; /* duplo veća vrednost */
+	height: 1080px; /* duplo veća vrednost */
 	margin-top: 100px;
-	background: rgb(0,0,0,.1);
-	transform: rotate(-30deg) skew(25deg) scale(.8);
+	background: rgb(0, 0, 0, 0.1);
+	transform: rotate(-30deg) skew(25deg) scale(0.8);
 	transition: 0.7s;
 	border-radius: 60px;
-}
-.container img 
-{
-	position: absolute;
-	width: 100%;
-	transition: 0.8s;
-	border-radius: 40px;
+  }
+
+.container img {
+  position: absolute;
+  width: 200%; /* duplo veća vrednost */
+  transition: 0.8s;
+  border-radius: 40px;
 }
 .container:hover img:nth-child(4)
 {
