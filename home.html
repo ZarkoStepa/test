@@ -105,7 +105,7 @@
     </header>
     <main>
         <section id="home">
-            <h1>Welcome to my Portfolio Website</h1>
+            <h1>Check forms</h1>
             <p>Click on the links above to navigate to other pages</p>
             <a href="#modal">Test Modal Dialog Box</a>
             <div class="dropdown">
@@ -116,30 +116,83 @@
                     <a href="#">Option 3</a>
                 </div>
             </div>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <label for="checkbox">Checkbox:</label>
-                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
-
-                <label for="radio">Radio:</label>
-                <input type="radio" id="radio1" name="radio" value="radio1">
-                <label for="radio1">Option 1</label>
-                <input type="radio" id="radio2" name="radio" value="radio2">
-                <label for="radio2">Option 2</label>
-
-                <input type="submit" value="Submit">
-            </form>
+            <form >
+                <fieldset >
+                    <div>
+                  <legend>Contact Form</legend>
+                  <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                  </div>
+                  <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                  </div>
+                  <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                  </div>
+                </div>
+                </fieldset>
+              
+                <div style="display: inline-block;">
+                    <fieldset>
+                      <legend>Checkbox and Radio Buttons</legend>
+                      <div>
+                        <label for="checkbox">Checkbox:</label>
+                        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                      </div>
+                      <div>
+                        <label for="radio">Radio:</label>
+                        <div>
+                          <input type="radio" id="radio1" name="radio" value="radio1">
+                          <label for="radio1">Option 1</label>
+                          <input type="radio" id="radio2" name="radio" value="radio2">
+                          <label for="radio2">Option 2</label>
+                          <input type="radio" id="radio3" name="radio" value="radio2">
+                          <label for="radio3">Option 3</label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  
+                  <div style="display: inline-block;">
+                    <fieldset>
+                      <legend>Multiple Checkboxes and Radio Buttons</legend>
+                      <div>
+                        <label>Checkbox:</label>
+                        <div>
+                          <label>
+                            <input type="checkbox" name="checkbox1" value="checkbox1"> Checkbox 1
+                          </label>
+                        </div>
+                        <div>
+                          <label>
+                            <input type="checkbox" name="checkbox2" value="checkbox2"> Checkbox 2
+                          </label>
+                        </div>
+                      </div>
+                      <div>
+                        <h3>Radio Buttons</h3>
+                        <div>
+                          <label>
+                            <input type="radio" name="radio1" value="radio1"> Radio 1
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                  
+              
+                <div>
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+              
 
             <label for="select">Select:</label>
             <select id="select" name="select">
