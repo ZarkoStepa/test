@@ -1,49 +1,91 @@
+/* Global styles */
 body {
-	background-color: #4CAF50; /* zelena pozadina */
-	font-family: Arial, sans-serif; /* font za tekst */
-	color: #fff; /* bela boja teksta */
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
   }
   
-  h1 {
-	font-size: 2em; /* veličina naslova */
-	text-align: center; /* poravnanje naslova */
-	padding: 20px; /* dodatni prostor oko naslova */
+  /* Header styles */
+  .wellcome {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
   }
   
-  form {
-	background-color: #fff; /* bela pozadina forme */
-	border-radius: 10px; /* zaobljeni uglovi forme */
-	padding: 20px; /* dodatni prostor oko forme */
-	max-width: 400px; /* maksimalna širina forme */
-	margin: 0 auto; /* centralizovanje forme */
+  /* Login form styles */
+  .modal {
+	background-color: #fff;
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imgcontainer {
+	text-align: center;
+	margin-bottom: 20px;
+  }
+  
+  .avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+  }
+  
+  .container {
+	padding: 16px;
   }
   
   label {
-	display: block; /* svaka oznaka novi red */
-	margin-bottom: 10px; /* dodatni prostor ispod oznake */
+	font-weight: bold;
   }
   
-  input[type="email"],
-  input[type="password"] {
-	padding: 10px; /* dodatni prostor unutar polja */
-	width: 100%; /* puna širina polja */
-	border-radius: 5px; /* zaobljeni uglovi polja */
-	border: none; /* bez ivice polja */
-	margin-bottom: 20px; /* dodatni prostor ispod polja */
+  input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	border-radius: 4px;
   }
   
-  input[type="submit"] {
-	background-color: #4CAF50; /* zelena boja dugmeta */
-	color: #fff; /* bela boja teksta na dugmetu */
-	padding: 10px 20px; /* dodatni prostor unutar dugmeta */
-	border: none; /* bez ivice na dugmetu */
-	border-radius: 5px; /* zaobljeni uglovi dugmeta */
-	cursor: pointer; /* kursor menja oblik kada se pređe preko dugmeta */
-	transition: background-color 0.3s ease; /* glatka tranzicija boje pozadine */
+  button {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
   }
   
-  input[type="submit"]:hover {
-	background-color: #fff; /* bela boja pozadine na hover */
-	color: #4CAF50; /* zelena boja teksta na hover */
+  button:hover {
+	background-color: #45a049;
+  }
+  
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+  .cancelbtn:hover {
+	background-color: #d32f2f;
+  }
+  
+  .psw a {
+	color: #4CAF50;
+  }
+  
+  .psw a:hover {
+	text-decoration: underline;
   }
   
