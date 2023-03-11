@@ -1,51 +1,104 @@
-body {
-    background-color: #f0f5f9;
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #1e3c72;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  nav {
-    background-color: #4da8da;
-    padding: 10px;
-    width: 200px;
-    float: left;
-    margin-top: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
+/* Global styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-  }
-  
-  nav li {
-    margin: 0;
-    padding: 5px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
     color: #fff;
-  }
-  
-  nav li:hover {
-    background-color: #3c8dbc;
-  }
-  
-  .container {
-    margin: 10px;
-    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Main styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+aside {
+    flex-basis: 20%;
+}
+
+aside ul {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+aside a:hover {
+    color: #ffd700;
+}
+
+section {
+    flex-basis: 75%;
     background-color: #fff;
-    float: left;
-    width: 800px;
-    min-height: 400px;
-  }
-  
-  footer {
-    background-color: #1e3c72;
-    color: #fff;
-    padding: 10px;
-    clear: both;
-  }
-  
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    aside {
+        flex-basis: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    section {
+        flex-basis: 100%;
+    }
+}
