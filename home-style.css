@@ -1,73 +1,90 @@
 body {
-  background-color: #3a0ca3; /* set the background color to a fancy purple */
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f7cacc;
 }
 
-#container {
-  width: 400px;
-  margin: 0 auto;
-  padding-top: 80px;
+header {
+  background-color: #f15b7c;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-form {
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
-.login {
-  text-align: center;
+nav li {
+  margin-right: 20px;
 }
 
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
+main {
+  display: flex;
+}
+
+aside {
+  background-color: #f691a3;
+  color: #fff;
+  padding: 20px;
+  min-width: 200px;
+}
+
+aside ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+aside li {
   margin-bottom: 10px;
 }
 
-h1 {
-  margin: 0;
-  font-size: 30px;
+aside a {
+  color: #fff;
+  text-decoration: none;
   font-weight: bold;
-  color: #3a0ca3; /* set the text color to a matching fancy purple */
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+aside a:hover {
+  transform: scale(1.1);
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 48px;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 p {
-  margin: 20px 0 10px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #3a0ca3; /* set the text color to a matching fancy purple */
-}
-
-input[type="text"], input[type="password"], input[type="submit"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #3a0ca3; /* set the border color to a matching fancy purple */
-  border-radius: 4px;
-  font-size: 18px;
-}
-
-input[type="submit"] {
-  background-color: #3a0ca3; /* set the background color to a matching fancy purple */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-input[type="submit"]:hover {
-  background-color: #ffcb74; /* set the background color to a matching fancy yellow on hover */
-}
-
-a {
-  display: block;
+  font-size: 24px;
+  line-height: 1.5;
   text-align: center;
-  margin-top: 10px;
-  color: #3a0ca3; /* set the text color to a matching fancy purple */
-  font-size: 18px;
-}
-
-a:hover {
-  color: #ffcb74; /* set the text color to a matching fancy yellow on hover */
 }
