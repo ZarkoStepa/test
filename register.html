@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Registration Page</title>
     <link rel="stylesheet" type="text/css" href="register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </head>
+
 <body>
     <div class="container">
         <h1>Registration Form</h1>
@@ -44,6 +48,26 @@
 
             <input type="submit" value="Register">
         </form>
+        <script>
+            const registerBtn = document.getElementById('registerBtn');
+            registerBtn.addEventListener('click', () => {
+              // perform registration logic here
+          
+              // show toast message after successful registration
+              Toastify({
+                text: 'Registered successfully!',
+                duration: 3000,
+                newWindow: true,
+                close: true,
+                gravity: 'bottom',
+                position: 'left',
+                backgroundColor: 'linear-gradient(to right, #00b09b, #96c93d)',
+                stopOnFocus: true,
+                onClick: function(){} // no action on click
+              }).showToast();
+            });
+          </script>
     </div>
 </body>
+
 </html>
