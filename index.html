@@ -31,18 +31,15 @@
       </div>
     </form>
   </div>
-  
+
+  <script type="text/javascript">
+    function login(username, password) {
+      if (username == "admin" && password == "admin") {
+        window.location = "home.html";
+      } else {
+        alert("Wrong username or password");
+      }
+    }
+  </script>
 </body>
-
-
-<script type="text/javascript">
- function login(username, password) {
-	if (username == "admin" && password == "admin") {
-	  window.location.href = "home.html"; // redirect to home.html page
-	} else {
-	  alert("Wrong username or password");
-	}
-  }
-
- </script>
 </html>
