@@ -76,35 +76,33 @@
            
           </style>
     </main>
-    <script>
-        function logout() {
-            window.location.href = "index.html";
-        }
-    </script>
+    
 </body>
 
 </html> -->
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Portfolio Website</title>
-	<link rel="stylesheet" type="text/css" href="home-style.css">
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="home-style.css">
 </head>
+
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="home.html">Home</a></li>
-				<li><a href="about.html">About me</a></li>
-				<li><a href="projects.html">Projects</a></li>
-				<li><a href="work.html">Work</a></li>
-				<li><a href="contact.html">Contact me</a></li>
-				<li><a href="logout.html">Log Out</a></li>
-			</ul>
-		</nav>
-	</header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="index.html">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section id="home">
             <h1>Welcome to my Portfolio Website</h1>
@@ -121,41 +119,41 @@
             <form>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-    
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-    
+
                 <label for="subject">Subject:</label>
                 <input type="text" id="subject" name="subject" required>
-    
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-    
+
                 <label for="checkbox">Checkbox:</label>
                 <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
-    
+
                 <label for="radio">Radio:</label>
                 <input type="radio" id="radio1" name="radio" value="radio1">
                 <label for="radio1">Option 1</label>
                 <input type="radio" id="radio2" name="radio" value="radio2">
                 <label for="radio2">Option 2</label>
-    
+
                 <input type="submit" value="Submit">
             </form>
-    
+
             <label for="select">Select:</label>
             <select id="select" name="select">
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
                 <option value="option3">Option 3</option>
             </select>
-    
+
             <label for="file">File:</label>
             <input type="file" id="file" name="file">
-    
+
             <a href="#" download>Download</a>
         </section>
-    
+
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
@@ -163,20 +161,26 @@
             </div>
         </div>
     </main>
-    
+
     <script>
         // Get the modal
         var modal = document.getElementById("modal");
-    
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-    
+
         // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function logout() {
+            window.location.href = "index.html";
+        }
+
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,118 @@
+body {
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0 15%;
+}
+
+header {
+    background-color: #005d7f;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+h2 {
+    color: #005d7f;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0099cc;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #0099cc;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.blog-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #0099cc;
+    margin-bottom: 20px;
+    height: 28px;
+}
+
+.blog-list li {
+    margin-right: 20px;
+}
+
+.blog-list a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.blog-list a:hover,
+.blog-list li.active a {
+    background-color: #0099cc;
+    color: #fff;
+}
+
+.content {
+    display: none;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#medical-clinics img {
+    border: 10px solid #0077b3;
+}
+
+#freelance-app img {
+    border: 10px solid #00b3e6;
+}
+
+#affiliate-bet-admin-panel img {
+    border: 10px solid #00e6b3;
+}
+
+.image-container {
+    text-align: center;
+}
