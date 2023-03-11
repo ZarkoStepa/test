@@ -1,45 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login Page</title>
-  <link rel="stylesheet" type="text/css" href="loginstyle.css">
+	<meta charset="utf-8">
+	<title>Login page</title>
+	<link rel="stylesheet" type="text/css" href="loginstyle.css">
+	<link rel="stylesheet" type="text/css" href="forgotpasswordstyle.css">
 </head>
 <body>
-  <div class="wellcome"><h1>Welcome to my portfolio</h1></div>
-  <div class="modal">
-    <form action="#" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); return false;">
-      <div class="imgcontainer">
-        <img src="shell.png" alt="Avatar" class="avatar">
-      </div>
-      <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="username" required>
+	<div id="container">
+		<form action="index.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
+    	return false;">
+			<div class="login">
+				<img src="ico.png" class="avatar">
+				<h1>Login here</h1>
+			</div>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>
+			<p>Username</p>
+			<input type="text" name="username" id="username" placeholder="username" value="" required="false">
+			<p>Password</p>
+			<input type="password" name="password" id="password" value="" placeholder="password" required="false">
+			<input type="submit" name="button" value="Sign In" action="index.html">
 
-        <button type="submit">Login</button>
-        <br>
-        <label>
-          <input type="checkbox"  name="remember"> Remember me
-        </label>
-      </div>
-      <div class="container" style="background-color:#f1f1f1">
-        <button type="button" class="cancelbtn">Cancel</button>
-        <span class="psw"><a href="#">Forgot password?</a></span>
-      </div>
-    </form>
-  </div>
+			<a href="#">Lost your password?</a></br>
+			<a href="#">Don't have an account?</a>
+		</form>
 
-  <script type="text/javascript">
-    function login(username, password) {
-      if (username == "admin" && password == "admin") {
-        window.location = "home.html";
-      } else {
-        alert("Wrong username or password");
-      }
-    }
-  </script>
+		<script type="text/javascript">
+		    function login(username, password) {
+		        if (username == "admin" && password == "admin") {
+		            window.location = "home.html";
+		        } else {
+		            alert("Wrong username or password");
+		            window.location = "forgot_password.html.html";
+		        }
+		    }
+		</script>
+	</div>
 </body>
-</html>
+</html> 
