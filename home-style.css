@@ -1,3 +1,12 @@
+/* Define the four colors */
+:root {
+  --red: #ff4d4d;
+  --blue: #4d4dff;
+  --green: #33cc33;
+  --orange: #ff9900;
+}
+
+/* Main styles */
 body {
   margin: 0;
   padding: 0;
@@ -41,32 +50,88 @@ main {
   display: flex;
 }
 
+/* Filters section styles */
 aside {
-  background-color: #91f3f6;
-  color: #ffffff;
+  background-color: var(--blue);
+  color: #fff;
   padding: 20px;
   min-width: 200px;
+  border-radius: 5px;
 }
 
-aside ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-aside li {
+.filters h2 {
+  color: var(--green);
+  margin-top: 0;
   margin-bottom: 10px;
+  text-align: center;
+  font-size: 32px;
 }
 
-aside a {
-  color: #6ba8da;
-  text-decoration: none;
+.filters h3 {
+  color: var(--green);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.filters select {
+  background-color: var(--orange);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+
+.filters input[type="checkbox"],
+.filters input[type="radio"] {
+  margin-right: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.filters input[type="checkbox"]:checked + label,
+.filters input[type="radio"]:checked + label {
+  color: var(--red);
   font-weight: bold;
-  font-size: 18px;
+}
+
+.filters input[type="checkbox"]:checked,
+.filters input[type="radio"]:checked {
+  border-color: var(--red);
+  background-color: var(--red);
+}
+
+.filters input[type="submit"] {
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
-aside a:hover {
+.filters input[type="submit"]:hover {
+  background-color: var(--orange);
   transform: scale(1.1);
 }
 
@@ -78,13 +143,116 @@ section {
 
 h1 {
   font-size: 48px;
-  margin-top: 0;
-  margin-bottom: 20px;
+}/* Style the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  }
+  
+  .table th,
+  .table td {
+  padding: 10px;
+  border: 1px solid #ddd;
   text-align: center;
-}
-
-p {
-  font-size: 24px;
-  line-height: 1.5;
+  }
+  
+  .table th {
+  background-color: var(--green);
+  color: #fff;
+  }
+  
+  .table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  }
+  
+  /* Style the pagination */
+  .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  }
+  
+  .pagination a {
+  display: inline-block;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  padding: 5px 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  }
+  
+  .pagination a:hover {
+  background-color: var(--blue);
+  color: #fff;
+  }
+  
+  .pagination .active {
+  background-color: var(--blue);
+  color: #fff;
+  border: 1px solid var(--blue);
+  }
+  
+  /* Style the footer */
+  footer {
+  background-color: #d6dce0;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-}
+  }
+  
+  footer p {
+  margin: 0;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+  header {
+  flex-direction: column;
+  text-align: center;
+  }
+  
+  nav {
+  margin-top: 20px;
+  }
+  
+  aside {
+  min-width: 0;
+  margin-top: 20px;
+  }
+  
+  .filters {
+  margin-top: 20px;
+  }
+  
+  .table {
+  font-size: 14px;
+  }
+  }
+  
+  @media screen and (max-width: 480px) {
+  h1 {
+  font-size: 36px;
+  }
+  
+  p {
+  font-size: 18px;
+  }
+  
+  .filters select,
+  .filters label {
+  display: inline-block;
+  margin-right: 10px;
+  }
+  
+  .pagination a {
+  padding: 5px;
+  margin: 0 2px;
+  font-size: 14px;
+  }
+  
+  footer p {
+  font-size: 14px;
+  }
+  }
