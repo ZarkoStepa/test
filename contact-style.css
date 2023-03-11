@@ -1,0 +1,53 @@
+/* CSS code for the header */
+
+/* Style for the navigation bar */
+nav {
+  background-color: #333; /* Change the background color */
+  height: 50px;
+}
+
+/* Style for the links */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px; /* Change the font size */
+  font-family: 'Open Sans', sans-serif; /* Change the font family */
+  text-transform: uppercase; /* Change the text to uppercase */
+}
+
+nav li a:hover {
+  background-color: #111; /* Change the background color on hover */
+}
+
+/* Add a logo image */
+nav .logo {
+  float: left;
+}
+
+nav .logo img {
+  height: 40px;
+  padding: 5px;
+}
+
+/* CSS code for the main section */
+
+/* Style for the h1 heading */
+section h1 {
+  font-size: 32px; /* Change the font size */
+  font-weight: bold; /* Make the font bold */
+  margin-bottom: 20px; /* Add some space below the heading */
+}

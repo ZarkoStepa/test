@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/contact-style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="index.html" name="logout" onclick="logout()">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Contact me</h1>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <label for="password">Password:</label>
+          <div class="password-input-container">
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <img class="toggle-password-icon" src="eye.svg" alt="eye" />
+          </div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+<script>
+  const passwordInput = document.querySelector('#password');
+const togglePasswordIcon = document.querySelector('.toggle-password-icon');
+
+togglePasswordIcon.addEventListener('click', function() {
+  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+  passwordInput.setAttribute('type', type);
+  togglePasswordIcon.setAttribute('src', type === 'password' ? 'eye.svg' : 'eye-off.svg');
+});
+
+</script>
+      </section>
+    </main>
+  </body>
+</html>
