@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Login page</title>
-	<link rel="stylesheet" type="text/css" href="loginstyle.css">
-	<link rel="stylesheet" type="text/css" href="forgotpasswordstyle.css">
+	<title>Login Page</title>
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		form {
+			background-color: #fff;
+			border: 3px solid #ddd;
+			padding: 20px;
+			width: 300px;
+			margin: 50px auto;
+			text-align: center;
+		}
+		input[type=text], input[type=password] {
+			padding: 12px 20px;
+			margin: 8px 0;
+			display: inline-block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			width: 100%;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+		}
+		button:hover {
+			opacity: 0.8;
+		}
+	</style>
 </head>
 <body>
-	<div id="container">
-		<form action="home.html" method="post" name="login_form" onsubmit="login(this.username_field.value, this.password_field.value); 
-    	return false;">
-			<div class="login">
-				<img src="ico.png" class="avatar">
-				<h1>Login here</h1>
-			</div>
-
-			<p>Username</p>
-			<input type="text" name="username" id="username" placeholder="username" value="" required="true">
-			<p>Password</p>
-			<input type="password" name="password" id="password" value="" placeholder="password" required="true">
-			<input type="submit" name="button" value="Sign In">
-
-			<a href="#">Lost your password?</a></br>
-			<a href="#">Don't have an account?</a>
-		</form>
-
-		<script type="text/javascript">
-		    function login(username, password) {
-		        if (username == "admin" && password == "admin") {
-		            window.location = "home.html";
-		        } else {
-		            alert("Wrong username or password");
-		            window.location = "forgot_password.html";
-		        }
-		    }
-		</script>
-	</div>
+	<form action="home_page.html" method="post">
+		<h1>Login</h1>
+		<label for="username"><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="username" required>
+		<label for="password"><b>Password</b></label>
+		<input type="password" placeholder="Enter Password" name="password" required>
+		<button type="submit">Login</button>
+	</form>
 </body>
 </html>
