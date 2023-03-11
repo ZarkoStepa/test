@@ -46,5 +46,20 @@
 		<input type="password" placeholder="Enter Password" name="password" required>
 		<button type="submit">Login</button>
 	</form>
+<div>
+  <input type="password" id="password" name="password">
+  <input type="checkbox" id="show-password">
+  <label for="show-password">Prikaži lozinku</label>
+</div>
+
+<script>
+const showPassword = document.querySelector('#show-password');
+const password = document.querySelector('#password');
+
+showPassword.addEventListener('change', function() {
+  password.type = this.checked ? 'text' : 'password';
+});
+</script>
+
 </body>
 </html>
