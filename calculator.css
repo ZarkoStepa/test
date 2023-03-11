@@ -1,0 +1,23 @@
+
+.digitron{
+	width:300px;
+	height:360px;
+	border-radius:15px;
+	border:2px solid black;
+	background:yellow;
+	font-size:15px;
+}
+input{
+	border-radius:10px;
+	padding:20px;
+	margin:5px;
+	height:25px;
+	width:52px;
+	font-size:20px;
+}
+p{	
+	font-family:Roboto;
+	font-size:25px;
+	color:black;
+	text-align:center;
+}	

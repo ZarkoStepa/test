@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>digitron</title>
+	<link href="calculator.css" rel="stylesheet" type="text/css">
+    </head>
+<body text= "white">
+    <div class="digitron">
+    <form name="dig" >
+    <p><b>Calculator</b></p>
+    <input type="textfield" name="op" value="" style="width:250px;text-align:right; color:gray">
+    <br>
+    <input type="button" value="1" onClick="dig.op.value+='1'">
+    <input type="button" value="2" onClick="dig.op.value+='2'">
+    <input type="button" value="3" onClick="dig.op.value+='3'">
+    <input type="button" value="+" onClick="dig.op.value+='+'">
+    <br>
+    <input type="button" value="4" onClick="dig.op.value+='4'">
+    <input type="button" value="5" onClick="dig.op.value+='5'">
+    <input type="button" value="6" onClick="dig.op.value+='6'">
+    <input type="button" value="-" onClick="dig.op.value+='-'">
+     <br>
+    <input type="button" value="7" onClick="dig.op.value+='7'">
+    <input type="button" value="8" onClick="dig.op.value+='8'">
+    <input type="button" value="9" onClick="dig.op.value+='9'">
+    <input type="button" value="*" onClick="dig.op.value+='*'">
+    <br>
+    <input type="button" value="/" onClick="dig.op.value+='/'">
+     
+    <input type="button" value="0" onClick="dig.op.value+='0'">
+    <input type="button" value="." onClick="dig.op.value+='.'">
+
+    <input type="button" value="=" onClick="dig.op.value=eval(dig.op.value)">
+ 
+    </form>
+    </div>
+</body>
+</html>
