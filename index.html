@@ -56,25 +56,22 @@ De<!DOCTYPE html>
 	</style>
 </head>
 <body>
+<div class="password-toggle">
 	<form action="/test/home.html" method="get">
 		<h1>Login</h1>
 		<label for="username"><b>Username</b></label>
 		<input type="text" placeholder="Enter Username" name="username" required>
 		<label for="password"><b>Password</b></label>
-		<input type="password" placeholder="Enter Password" name="password" required>
+		<input type="password" id="password" name="password" placeholder="Enter Password" name="password" required>
+                <input type="checkbox" id="show-password">
 		<button type="submit">Login</button>
 	</form>
-<div>
-  <input type="password" id="password" name="password">
-  <input type="checkbox" id="show-password">
+  <i class="toggle-password fas fa-eye"></i>
   <label for="show-password">Prikaži lozinku</label>
 </div>
 
-<div class="password-toggle">
-  <input type="password" id="password" name="password">
-  <i class="toggle-password fas fa-eye"></i>
-</div>
 
+  
 <script>
 const togglePassword = document.querySelector('.toggle-password');
 const password = document.querySelector('#password');
