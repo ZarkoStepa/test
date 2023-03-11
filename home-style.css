@@ -1,258 +1,179 @@
-/* Define the four colors */
-:root {
-  --red: #ff4d4d;
-  --blue: #4d4dff;
-  --green: #33cc33;
-  --orange: #ff9900;
-}
+/* GENERAL STYLES */
 
-/* Main styles */
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #becee0;
+}
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
 }
 
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 200px;
+  margin-bottom: 0.5rem;
+  
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* HEADER */
+
 header {
-  background-color: #c3d1db;
-  color: hsl(234, 9%, 46%);
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  overflow-y: auto;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
-  display: flex;
+  padding: 2rem 0;
 }
 
 nav li {
-  margin-right: 20px;
+  margin-bottom: 1rem;
 }
 
 nav a {
-  color: #1a50a1;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
+  display: block;
+  padding: 1rem;
 }
 
 nav a:hover {
-  transform: scale(1.1);
+  background-color: #f2f2f2;
 }
+
+/* MAIN CONTENT */
 
 main {
-  display: flex;
-}
-
-/* Filters section styles */
-aside {
-  background-color: var(--blue);
-  color: #fff;
-  padding: 20px;
-  min-width: 200px;
-  border-radius: 5px;
-}
-
-.filters h2 {
-  color: var(--green);
-  margin-top: 0;
-  margin-bottom: 10px;
-  text-align: center;
-  font-size: 32px;
-}
-
-.filters h3 {
-  color: var(--green);
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
-.filters select {
-  background-color: var(--orange);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.filters label {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-}
-
-.filters input[type="checkbox"],
-.filters input[type="radio"] {
-  margin-right: 10px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-}
-
-.filters input[type="checkbox"]:checked + label,
-.filters input[type="radio"]:checked + label {
-  color: var(--red);
-  font-weight: bold;
-}
-
-.filters input[type="checkbox"]:checked,
-.filters input[type="radio"]:checked {
-  border-color: var(--red);
-  background-color: var(--red);
-}
-
-.filters input[type="submit"] {
-  background-color: var(--green);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.filters input[type="submit"]:hover {
-  background-color: var(--orange);
-  transform: scale(1.1);
-}
-
-section {
-  background-color: #a7b2d3;
-  padding: 20px;
-  flex-grow: 1;
+  margin-left: 250px;
+  padding: 2rem;
 }
 
 h1 {
-  font-size: 48px;
-}/* Style the table */
-.table {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 0.5rem;
+  color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #fff;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  max-width: 800px;
   }
   
-  .table th,
-  .table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: center;
+  input,
+  textarea,
+  select {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  width: 100%;
+  margin-bottom: 0.5rem; /* reduce margin-bottom to create less space */
   }
   
-  .table th {
-  background-color: var(--green);
-  color: #fff;
-  }
-  
-  .table tr:nth-child(even) {
-  background-color: #f2f2f2;
-  }
-  
-  /* Style the pagination */
-  .pagination {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  }
-  
-  .pagination a {
-  display: inline-block;
-  color: var(--blue);
-  border: 1px solid var(--blue);
-  padding: 5px 10px;
-  margin: 0 5px;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-  }
-  
-  .pagination a:hover {
-  background-color: var(--blue);
-  color: #fff;
-  }
-  
-  .pagination .active {
-  background-color: var(--blue);
-  color: #fff;
-  border: 1px solid var(--blue);
-  }
-  
-  /* Style the footer */
-  footer {
-  background-color: #d6dce0;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  }
-  
-  footer p {
-  margin: 0;
-  }
-  
-  /* Responsive styles */
-  @media screen and (max-width: 768px) {
-  header {
-  flex-direction: column;
-  text-align: center;
-  }
-  
-  nav {
-  margin-top: 20px;
-  }
-  
-  aside {
-  min-width: 0;
-  margin-top: 20px;
-  }
-  
-  .filters {
-  margin-top: 20px;
-  }
-  
-  .table {
-  font-size: 14px;
-  }
-  }
-  
-  @media screen and (max-width: 480px) {
-  h1 {
-  font-size: 36px;
-  }
-  
-  p {
-  font-size: 18px;
-  }
-  
-  .filters select,
-  .filters label {
-  display: inline-block;
-  margin-right: 10px;
-  }
-  
-  .pagination a {
-  padding: 5px;
-  margin: 0 2px;
-  font-size: 14px;
-  }
-  
-  footer p {
-  font-size: 14px;
+  @media screen and (min-width: 1920px) {
+  main {
+  max-width: 1600px; /* set max-width to 1600px for screens with 1920px width /
+  margin: 0 auto; / center main content */
   }
   }
