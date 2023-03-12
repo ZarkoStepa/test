@@ -11,10 +11,66 @@ body {
   line-height: 1.5;
   background-color: #f2f2f2;
 }
-
-form{
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  /* display: flex; */
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  /* /Header// */
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #8cd492;
   display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+   margin-left: 0;
 }
+
+header input[type="search"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  width: 300px;
+  background: url(search.svg) no-repeat 10px center;
+  background-size: 20px;
+  padding-left: 50px;
+  margin-left: 150px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+header input[type="submit"] {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  width: 80%;
+  padding: 10px;
+  margin-left: 20px;
+  border-radius: 5px;
+  
+  font-size: 1.2rem;
+  background-color: #3F3D56;
+  color: #FFF;
+  font-weight: bold;
+  
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+/* :end */
+
+
 a {
   color: #333;
   text-decoration: none;
@@ -70,6 +126,9 @@ label {
   fieldset {
     display: -webkit-inline-box;
     flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 50px;
+    
   }
   input[type="radio"] {
     margin-right: 0.03rem; /* add some margin-right to the radio buttons to create space between them */
@@ -81,29 +140,20 @@ label {
     box-sizing: border-box;
     margin-top: auto;
   }
-/* HEADER */
-
-header {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+nav {
   position: fixed;
   top: 0;
-  left: 0;
+   height: 100%;
+  background-color: #8cd492;
   width: 230px;
-  height: 100%;
+  left: 0;
   overflow-y: auto;
-  background-color: #8cd492;      
-  display: inline;
-  justify-content: space-between;
-  align-items: center;
-
-   
-    
 }
 
 nav ul {
   list-style: none;
-  padding: 2rem 0;
+  padding: 5rem 0;
+  margin: 0;
 }
 
 nav li {
@@ -113,12 +163,17 @@ nav li {
 nav a {
   display: block;
   padding: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #e1f1e9;
+  background-color: #fff;
   border-radius: 10px;
+  color: #8cd492;
 }
+
 
 /* MAIN CONTENT */
 
@@ -204,3 +259,57 @@ p {
 .modal-content button {
   margin-top: 1rem; /* add margin-top to create some space */
 }
+footer {
+  background-color: #FAEBD7; /* tropical color */
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-icons img {
+  height: 30px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer-social-icons img:hover {
+  opacity: 1;
+}
+
+.footer-links {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-text p {
+  color: #666;
+  font-size: 12px;
+}
+
+
+

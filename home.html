@@ -8,25 +8,43 @@
 </head>
 
 <body>
-    <header>
-        <div class="header-wrapper">
-            <h1>My Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                    <li><a href="index.html" name="logout" onclick="logout()">Log Out</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+   
     <main>
         <aside>
             <div class="filters">
                 <h2>Filters</h2>
                 <nav>
+                    <div class="header-wrapper">
+            <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="work.html">Work</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="index.html" name="logout" onclick="logout()">Log Out</a></li>
+            </ul>
+        </nav>
+     </div>
+     <script>
+        
+     </script>
+     <script>
+        const navLinks = document.querySelectorAll('.header-wrapper nav ul li a');
+      
+        navLinks.forEach(link => {
+          link.addEventListener('mouseover', () => {
+            link.style.color = 'red';
+            link.style.textDecoration = 'underline';
+          });
+      
+          link.addEventListener('mouseout', () => {
+            link.style.color = 'black';
+            link.style.textDecoration = 'none';
+          });
+        });
+      </script>
                     <ul>
                         <li><a href="calculator.html">Calculator</a></li>
                     </ul>
@@ -37,33 +55,7 @@
                         <li><a href="calculator.html">Calculator</a></li>
                     </ul>
                 </nav>
-                <form>
-                    <h3>Dropdown</h3>
-                    <select>
-                        <option value="">Select option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <h3>Checkboxes</h3>
-                    <label>
-                        <input type="checkbox" name="checkbox1" value="checkbox1">
-                        Checkbox 1
-                    </label>
-                    <label>
-                        <input type="checkbox" name="checkbox2" value="checkbox2">
-                        Checkbox 2
-                    </label>
-                    <h3>Radio buttons</h3>
-                    <label>
-                        <input type="radio" name="radio1" value="radio1">
-                        Radio 1
-                    </label>
-                    <label>
-                        <input type="radio" name="radio1" value="radio2">
-                        Radio 2
-                    </label>
-                </form>
+                
             </div>
         </aside>
         <section>
@@ -92,107 +84,171 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About me</a></li>
-                <li><a href="calculator.html">Calculator</a></li>
-                <!-- <li><a href="work.html">Work</a></li> -->
-                <li><a href="contact.html">Contact me</a></li>
-                <li><a href="index.html">Log Out</a></li>
-            </ul>
-        </nav>
+
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" name="q" placeholder="Search" style="display: inline; margin-right: 50px;">
+            <input type="hidden" name="btnI" value="1">
+            <!-- <input type="submit" value=""> -->
+            <img src="/icons/user-avatar.svg" alt="avatar" style="display: inline; margin-right: 50px;">
+        </form>
+        <style>
+            form {
+                display: flex;
+                align-items: center;
+                margin-left: 230px;
+            }
+
+            input[type="text"] {
+                flex: 1;
+                text-align: center;
+            }
+
+            img[alt="avatar"] {
+                margin-left: auto;
+            }
+        </style>
+
     </header>
     <main>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="contact.html">Contact me</a></li>
+                    <li><a href="index.html" name="logout" onclick="logout()">Log Out</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="phone.html">Phone</a></li>
+                    <li><a href="calculator.html">Calculator</a></li>
+                </ul>
+        </nav>
+        <script>
+            const navLinks = document.querySelectorAll('.header-wrapper nav ul li a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('mouseover', () => {
+                    link.style.color = 'red';
+                    link.style.textDecoration = 'underline';
+                });
+
+                link.addEventListener('mouseout', () => {
+                    link.style.color = 'black';
+                    link.style.textDecoration = 'none';
+                });
+            });
+        </script>
         <section id="home">
-            <h1>Check forms</h1>
-            <p>Click on the links above to navigate to other pages</p>
-            <a href="#modal">Test Modal Dialog Box</a>
-            <div class="dropdown">
-                <button class="dropbtn">Dropdown</button>
-                <div class="dropdown-content">
-                    <a href="#">Option 1</a>
-                    <a href="#">Option 2</a>
-                    <a href="#">Option 3</a>
-                </div>
-            </div>
-            <form >
-                <fieldset >
-                    <div>
-                  <legend>Contact Form</legend>
-                  <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                  </div>
-                  <div>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                  </div>
-                  <div>
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                  </div>
-                  <div>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                  </div>
-                </div>
-                </fieldset>
-              
+
+            <form>
                 <div style="display: inline-block;">
                     <fieldset>
-                      <legend>Checkbox and Radio Buttons</legend>
-                      <div>
-                        <label for="checkbox">Checkbox:</label>
-                        <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
-                      </div>
-                      <div>
-                        <label for="radio">Radio:</label>
                         <div>
-                          <input type="radio" id="radio1" name="radio" value="radio1">
-                          <label for="radio1">Option 1</label>
-                          <input type="radio" id="radio2" name="radio" value="radio2">
-                          <label for="radio2">Option 2</label>
-                          <input type="radio" id="radio3" name="radio" value="radio2">
-                          <label for="radio3">Option 3</label>
+                            <legend>Contact Form</legend>
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="subject">Subject:</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
                         </div>
-                      </div>
                     </fieldset>
-                  </div>
-                  
-                  <div style="display: inline-block;">
-                    <fieldset>
-                      <legend>Multiple Checkboxes and Radio Buttons</legend>
-                      <div>
-                        <label>Checkbox:</label>
-                        <div>
-                          <label>
-                            <input type="checkbox" name="checkbox1" value="checkbox1"> Checkbox 1
-                          </label>
-                        </div>
-                        <div>
-                          <label>
-                            <input type="checkbox" name="checkbox2" value="checkbox2"> Checkbox 2
-                          </label>
-                        </div>
-                      </div>
-                      <div>
-                        <h3>Radio Buttons</h3>
-                        <div>
-                          <label>
-                            <input type="radio" name="radio1" value="radio1"> Radio 1
-                          </label>
-                        </div>
-                      </div>
-                    </fieldset>
-                  </div>
-                  
-              
-                <div>
-                  <input type="submit" value="Submit">
+
+                    <div style="display: inline-block;">
+                        <fieldset>
+                            <legend>Checkbox and Radio Buttons</legend>
+                            <div>
+                                <label for="checkbox">Checkbox:</label>
+                                <input type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+                            </div>
+                            <div>
+                                <label for="radio">Radio:</label>
+                                <div>
+                                    <input type="radio" id="radio1" name="radio" value="radio1">
+                                    <label for="radio1">Option 1</label>
+                                    <input type="radio" id="radio2" name="radio" value="radio2">
+                                    <label for="radio2">Option 2</label>
+                                    <input type="radio" id="radio3" name="radio" value="radio2">
+                                    <label for="radio3">Option 3</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div style="display: inline-block;">
+                        <fieldset>
+                            <legend>Multiple Checkboxes and Radio Buttons</legend>
+                            <div>
+                                <label>Checkbox:</label>
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="checkbox1" value="checkbox1"> Checkbox 1
+                                    </label>
+                                </div>
+                                <div>
+                                    <label>
+                                        <input type="checkbox" name="checkbox2" value="checkbox2"> Checkbox 2
+                                    </label>
+                                </div>
+                            </div>
+        </section>
+        <section id="header">
+            <div>
+                <legend>Click on the links above to navigate to other pages</legend>
+                <a href="#modal">Test Modal Dialog Box</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Filter 1</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
                 </div>
-              </form>
-              
+                <div class="dropdown">
+                    <button class="dropbtn">Filter 2</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Filter 3</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Filter 4</button>
+                    <div class="dropdown-content">
+                        <a href="#">Option 1</a>
+                        <a href="#">Option 2</a>
+                        <a href="#">Option 3</a>
+                    </div>
+                </div>
+                </fieldset>
+            </div>
+            </div>
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+
 
             <label for="select">Select:</label>
             <select id="select" name="select">
@@ -205,14 +261,37 @@
             <input type="file" id="file" name="file">
 
             <a href="#" download>Download</a>
-        </section>
-
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>This is a modal dialog box</p>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>This is a modal dialog box</p>
+                </div>
             </div>
-        </div>
+        </section>
+        <section id="footer">
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="/icons/logo.jpg" alt="UFJ Coin Logo">
+                    </div>
+                    <div class="footer-social-icons">
+                        <a href="https://www.facebook.com"><img src="/icons/facebook.svg" alt="Facebook"></a>
+                        <a href="https://www.instagram.com"><img src="/icons/instagram.svg" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com"><img src="/icons/linkedin.svg" alt="LinkedIn"></a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="about.html">About Us</a>
+                        <a href="galery.html">Gallery</a>
+                        <a href="policy">Privacy Policy</a>
+                        <a href="burtfm">How it Works</a>
+                    </div>
+                    <div class="footer-text">
+                        <p>All Rights Reserved &copy; 2023 </p>
+                    </div>
+                </div>
+            </footer>
+
+        </section>
     </main>
 
     <script>
@@ -232,6 +311,22 @@
         function logout() {
             window.location.href = "index.html";
         }
+        const navigate = document.querySelectorAll('nav ul li a');
+
+        navigate.forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = '#fff';
+                link.style.backgroundColor = '#8cd492';
+                link.style.borderRadius = '10px';
+                link.style.transition = 'all 0.3s ease';
+            });
+
+            link.addEventListener('mouseout', () => {
+                link.style.color = '#000';
+                link.style.backgroundColor = 'transparent';
+                link.style.borderRadius = '0';
+            });
+        });
 
     </script>
 </body>
